@@ -1,7 +1,7 @@
-/* >Take input string <message>
->Take seed offset <offset>
->do
-*/
+/*
+ * usage: ./Generator "<Message>" <offset>
+ * This program will take a given message and starting from <offset> iterate through possible rand seeds till it comes across one where each character can be XORed against a sequential rand value generated in the order equal to it's index.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
